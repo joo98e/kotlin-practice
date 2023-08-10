@@ -1,7 +1,17 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import interator.JIterable
+import interator.enums.JIterableType
+import practice.Practice
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+
+    val practice = Practice.init()
+    practice.addFirstName("joo")
+    println(practice.name)
+
+    val jIterable = JIterable.init()
+    jIterable.iterable(type = JIterableType.LOOP_1)
+    jIterable.iterable(type = JIterableType.LOOP_2)
+    jIterable.iterable(type = JIterableType.LOOP_3)
+    jIterable.iterable(type = JIterableType.LOOP_ARRAY)
+
 }
