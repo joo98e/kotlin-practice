@@ -34,7 +34,7 @@ class JIterable private constructor(
                 }
             }
 
-            else -> println("not implementation")
+            else -> throw NotImplementedError("")
         }
 
     }
