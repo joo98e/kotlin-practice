@@ -1,3 +1,9 @@
+import collection.immutable.ImmutableList
+import collection.immutable.ImmutableMap
+import collection.immutable.ImmutableSet
+import collection.mutable.MutableList
+import collection.mutable.MutableMap
+import collection.mutable.MutableSet
 import enums.PaymentStatus
 import extends.BullDog
 import extends.Dog
@@ -39,4 +45,14 @@ fun main(args: Array<String>) {
 
     val status = PaymentStatus.valueOf("PAID")
     println(status.desc)
+
+    println("=========================")
+    val immutableList = ImmutableList()
+    val immutableMap = ImmutableMap()
+    val immutableSet = ImmutableSet()
+
+    val mutableList = MutableList()
+    val mutableSet = MutableSet()
+    val mutableMap = MutableMap()
+
 }
