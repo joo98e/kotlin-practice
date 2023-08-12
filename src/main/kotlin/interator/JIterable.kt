@@ -4,7 +4,6 @@ import interator.enums.JIterableType
 
 class JIterable private constructor(
 ) {
-
     fun iterable(type: JIterableType) {
         println("=========================")
 

@@ -20,4 +20,6 @@ fun main(args: Array<String>) {
     val jNullable = JNullable.init()
     println("jNullable.elvis, ${jNullable.elvis(true, "keyword")}")
     println("jNullable.elvis, ${jNullable.elvis(false, "keyword")}")
+
+
 }
