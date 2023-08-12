@@ -1,7 +1,9 @@
+import enums.PaymentStatus
 import extends.BullDog
 import extends.Dog
 import interator.JIterable
 import interator.enums.JIterableType
+import `interface`.ImplementsMyInterface
 import nullable.JNullable
 import practice.Practice
 
@@ -23,10 +25,18 @@ fun main(args: Array<String>) {
     println("jNullable.elvis, ${jNullable.elvis(true, "keyword")}")
     println("jNullable.elvis, ${jNullable.elvis(false, "keyword")}")
 
+    println("=========================")
     val dog = Dog("멍멍")
     val bullDog = BullDog("뭉멍")
 
     println(dog.sound())
     println(bullDog.sound())
 
+    println("=========================")
+    val myInterface = ImplementsMyInterface("lastName")
+    myInterface.addFirstName("first Name")
+    println(myInterface.lastName)
+
+    val status = PaymentStatus.valueOf("PAID")
+    println(status.desc)
 }
