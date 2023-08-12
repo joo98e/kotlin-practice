@@ -1,3 +1,5 @@
+import extends.BullDog
+import extends.Dog
 import interator.JIterable
 import interator.enums.JIterableType
 import nullable.JNullable
@@ -21,5 +23,10 @@ fun main(args: Array<String>) {
     println("jNullable.elvis, ${jNullable.elvis(true, "keyword")}")
     println("jNullable.elvis, ${jNullable.elvis(false, "keyword")}")
 
+    val dog = Dog("멍멍")
+    val bullDog = BullDog("뭉멍")
+
+    println(dog.sound())
+    println(bullDog.sound())
 
 }
