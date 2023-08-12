@@ -19,4 +19,10 @@ class ImmutableMap {
     fun getMapValues(): List<Int> {
         return map.map { it.value }
     }
+
+    fun iterate() {
+        builderMap.map {
+
+        }
+    }
 }

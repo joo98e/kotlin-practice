@@ -14,4 +14,10 @@ class MutableList {
         add("s")
         add("t")
     }.toMutableList()
+
+    fun iterate() {
+        builderList.map {
+
+        }
+    }
 }

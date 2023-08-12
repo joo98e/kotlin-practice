@@ -14,4 +14,10 @@ class MutableSet {
         add(3)
         add(4)
     }.toMutableSet()
+
+    fun iterate() {
+        builderSet.map {
+
+        }
+    }
 }

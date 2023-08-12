@@ -9,4 +9,10 @@ class ImmutableList {
         add("s")
         add("t")
     }
+
+    fun iterate() {
+        builderList.map {
+
+        }
+    }
 }

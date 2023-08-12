@@ -14,4 +14,10 @@ class MutableMap {
         this["one"] = 3
         this["one"] = 4
     }.toMutableMap()
+
+    fun iterate() {
+        builderMap.map {
+
+        }
+    }
 }

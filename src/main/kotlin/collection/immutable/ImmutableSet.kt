@@ -9,4 +9,11 @@ class ImmutableSet {
         add(3)
         add(4)
     }
+
+
+    fun iterate() {
+        buildSet.map {
+
+        }
+    }
 }
