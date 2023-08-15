@@ -4,6 +4,10 @@ import collection.immutable.ImmutableSet
 import collection.mutable.MutableList
 import collection.mutable.MutableMap
 import collection.mutable.MutableSet
+import data.OnlyDataClass
+import developer.model.BackendDeveloper
+import developer.model.FrontendDeveloper
+import developer.pool.DeveloperPool
 import enums.PaymentStatus
 import extends.BullDog
 import extends.Dog
@@ -55,4 +59,28 @@ fun main(args: Array<String>) {
     val mutableSet = MutableSet()
     val mutableMap = MutableMap()
 
+    println("=========================")
+    val onlyDataClass1 = OnlyDataClass("name1")
+    val onlyDataClass2 = OnlyDataClass("name1")
+
+    println(onlyDataClass1 == onlyDataClass2)
+
+    val copy = onlyDataClass1.copy(name = "test")
+
+    println("=========================")
+
+    val frontDeveloper = FrontendDeveloper("frontend", "typescript")
+    val backendDeveloper = BackendDeveloper("backend", "kotlin")
+
+    DeveloperPool.add(frontDeveloper)
+    DeveloperPool.add(backendDeveloper)
+
+    val frontendDeveloper = DeveloperPool.getDeveloperOrElseNull(frontDeveloper)
+
+
+    println(frontendDeveloper)
+    println(DeveloperPool.getSize())
+
+
+    println(frontendDeveloper?.introduce())
 }
