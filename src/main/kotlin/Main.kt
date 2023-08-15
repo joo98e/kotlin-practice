@@ -14,6 +14,7 @@ import extends.Dog
 import interator.JIterable
 import interator.enums.JIterableType
 import `interface`.ImplementsMyInterface
+import lateInit.LateInit
 import nullable.JNullable
 import practice.Practice
 
@@ -81,6 +82,15 @@ fun main(args: Array<String>) {
     println(frontendDeveloper)
     println(DeveloperPool.getSize())
 
-
     println(frontendDeveloper?.introduce())
+
+    println("=========================")
+    val charSequence: CharSequence
+    val string = ""
+
+    println("=========================")
+    val lateInit = LateInit()
+
+    println(lateInit.text)
+
 }

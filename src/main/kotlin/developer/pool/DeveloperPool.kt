@@ -1,6 +1,6 @@
 package developer.pool
 
-import developer.type.Developer
+import developer.model.Developer
 
 object DeveloperPool {
     private val pool = mutableMapOf<String, Developer>()

@@ -1,6 +1,6 @@
-package developer.type
+package developer.model
 
-interface Developer {
+sealed interface Developer {
     val name: String
     val language: String
 
